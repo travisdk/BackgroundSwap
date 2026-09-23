@@ -1,0 +1,6 @@
+-r requirements-web.txt
+pywebview>=5.0
+# Linux uses Qt WebEngine via PySide6 (LGPL). Windows/macOS use the system web view instead.
+qtpy>=2.4 ; sys_platform == "linux"
+PySide6-Essentials>=6.6 ; sys_platform == "linux"
+PySide6-Addons>=6.6 ; sys_platform == "linux"
